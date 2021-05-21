@@ -103,6 +103,8 @@ values('crna',70.97,1),
 insert into decko_zarucnica(decko,zarucnica)
 values(1,1), (2,3), (3,2);
 
+update prijatelj set treciputa = '2020-04-30';
+
 
 
 
