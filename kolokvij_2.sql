@@ -107,6 +107,8 @@ update prijatelj set treciputa = '2020-04-30';
 
 delete from brat where ogrlica != 14;
 
+#Izlistajte suknja iz tablice cura uz uvjet da vrijednost kolone drugiputa nepoznate.
+select suknja from cura where drugiputa = null; # nisam siguran je li ovo točno.
 
 
 
