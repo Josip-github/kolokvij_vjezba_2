@@ -80,3 +80,51 @@ alter table neprijatelj add foreign key (cura) references cura(sifra);
 alter table brat add foreign key (neprijatelj) references neprijatelj(sifra);
 
 alter table prijatelj add foreign key (svekar) references svekar(sifra);
+
+#U tablice neprijatelj, cura i decko_zarucnica unesite po 3 retka.
+insert into neprijatelj(haljina,modelnaocala,kuna)
+values('svečana haljina','sunčane naočale',30.98),
+('svadbena haljina','naočale za čitanje',78.54),
+('obična haljina','Ray ban',99.18);
+
+insert into cura(haljina,drugiputa,majica)
+values('uska haljina','2021-03-04','dugih rukava'),
+('široka haljina','2020-12-25','kratkih rukava'),
+('haljina sa cvjetićima','2020-06-14','bez rukava');
+
+insert into decko(asocijalno)
+values(1),(0),(0);
+
+insert into zarucnica(bojakose,lipa,indiferentno)
+values('crna',70.97,1),
+('plava',7.67,0),
+('smeđa',45.43,0);
+
+insert into decko_zarucnica(decko,zarucnica)
+values(1,1), (2,3), (3,2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
