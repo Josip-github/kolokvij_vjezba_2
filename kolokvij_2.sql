@@ -122,8 +122,9 @@ inner join decko d on dz.decko = d.sifra
 inner join cura c on d.sifra = c.decko 
 inner join neprijatelj n on c.sifra = n.cura 
 inner join brat b on n.sifra = b.neprijatelj 
-where d.vesta like '%ba%'; 
-#ostalo nedovršeno, uz uvjet da su vrijednosti kolone drugiputa iz tablice cura poznate!
+where d.vesta like '%ba%' and c.drugiputa is not null 
+order by n.haljina desc;
+
 
 
 
